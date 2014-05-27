@@ -3,31 +3,9 @@
 <head>
     <meta charset="utf-8">
     <link href="http://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css">
-    <style>
-html, body, .container, .boy-area, .girl-area, .content
-{height: 100%;}
-.container  {overflow: hidden;}
-
-.boy-area   {width: 20%; background: #DDD; float: left;}
-.girl-area  {width: 20%; background: #DDD; float: right;}
-.content    {width: 60%; background: #FFF;}
-
-.boy-area, .girl-area, .content {display:table;}
-.boy-area > div, .girl-area > div, .content > div
-{display:table-cell; vertical-align: middle;}
-
-.player     {text-align: center;}
-.player img 
-{border: 1px solid #888; padding: 2px; margin: 5px; height: 50px;}
-
-.selected:first-child {float: left;}
-.selected:last-child  {float: right;}
-.selected img
-{border: 1px solid #888; padding: 2px; margin: 30px; height: 200px;}
-
-.content
-{text-align: center;}
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -59,13 +37,35 @@ html, body, .container, .boy-area, .girl-area, .content
         </div>
         <div class="content">
             <div>
-                <div class="selected">
-                    <img src="b1.jpg">
+                <div class="selected boy">
+                    <img class="active">
+                    <img src="imgs/b1.jpg">
+                    <img src="imgs/b2.jpg">
+                    <img src="imgs/b3.jpg">
+                    <img src="imgs/b4.jpg">
+                    <img src="imgs/b5.jpg">
+                    <img src="imgs/b6.jpg">
+                    <img src="imgs/b7.jpg">
+                    <img src="imgs/b8.jpg">
+                    <img src="imgs/b9.jpg">
                 </div>
-                <div class="selected">
-                    <img src="g1.jpg">
+                <div class="selected girl">
+                    <img class="active">
+                    <img src="imgs/g1.jpg">
+                    <img src="imgs/g2.jpg">
+                    <img src="imgs/g3.jpg">
+                    <img src="imgs/g4.jpg">
+                    <img src="imgs/g5.jpg">
+                    <img src="imgs/g6.jpg">
+                    <img src="imgs/g7.jpg">
+                    <img src="imgs/g8.jpg">
+                    <img src="imgs/g9.jpg">
                 </div>
-                <!--div>18</div-->
+            </div>
+        </div>
+        <div class="number">
+            <div>
+                <div class="inner-number">18</div>
             </div>
         </div>
     </div>
